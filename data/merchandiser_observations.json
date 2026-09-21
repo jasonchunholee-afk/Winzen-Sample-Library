@@ -1,0 +1,15 @@
+[
+  {
+    "id": "OBS-HUGO-BOSS-MU3M9MH2",
+    "timestamp": "2026-09-16T04:44:39.302Z",
+    "customer": "HUGO BOSS",
+    "scope": "customer_specific",
+    "garment_ids": [
+      "11S-1906"
+    ],
+    "raw_commentary": "Hugo Boss restructured into two distinct brand pillars HUGO and BOSS. Permanent architecture.",
+    "ai_deduction": "Customer-Specific Rule: Permanent Brand Architecture. Classified into two independent permanent brand pillars with separate retail & design ecosystems. Must not be collapsed into generic 'HB' or treated as temporal/seasonal lines.",
+    "status": "approved",
+    "associated_rule_code": "RULE-CALIB-01"
+  }
+]

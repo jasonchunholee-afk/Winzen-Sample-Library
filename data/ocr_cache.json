@@ -1,0 +1,44 @@
+{
+  "20S-1004-2_omni_vision_20S-1004-2.jpg_20S-1004-2 (F).jpg_20S-1004-2 (B).jpg": {
+    "garment_id": "20S-1004-2",
+    "extracted_label": {
+      "buyer": "Hugo Boss",
+      "brand_code": "BMA",
+      "season": "PS 21",
+      "sales": "顏卓湖/許秋玲",
+      "merchandiser": "Amy",
+      "cust_style_no": "HAVOOG 50443691",
+      "y_style_no": "20S-1004-2",
+      "winzen_style_no": "20S-1004-2",
+      "sample_job_no": "20S-1004-2",
+      "goods_no": "MA12233/SL-457",
+      "sample_stage": "大辦",
+      "garment_type": "Men's knitted pant",
+      "washing": "NON WASH",
+      "fabric_raw": "58% S.CAFE POLYESER 29% POLYESER 13% ELASTANE SONGLE JERSEY(#SCK-3115S)58% S.CAFE POLYESER 29%",
+      "fabric_material": "58% S.Café Coffee Yarn Polyester, 29% Polyester, 13% Elastane",
+      "fabric_yarn_count": "N/A",
+      "fabric_construction": "Single Jersey",
+      "color": "花松綠",
+      "size": "M(港)",
+      "gnw_weight": "310g/m2",
+      "remark_memo": "PRINT DATETIME: 2020/3/25 下午12:32:51; 樣板完成時間: 2020.3.27",
+      "handwritten_notes": "BMA, 125/80B, 310g/m2, 2020.3.27"
+    },
+    "garment_description": "These Hugo Boss Men's knitted pants feature a technical construction using S.Café coffee yarn for enhanced performance. The silhouette is a modern athletic pant with a drawstring waistband, zippered side pockets, and articulated knee panels. The fabric is a 310g/m2 single jersey blend, finished in a non-wash olive green tone.",
+    "hashtags": [
+      "#menswear",
+      "#knittedpants",
+      "#hugoboss",
+      "#scafe",
+      "#technicalapparel",
+      "#drawstring",
+      "#waistband_drawstring",
+      "#zipperpockets",
+      "#athleticwear",
+      "#print",
+      "#piping"
+    ],
+    "cached_at": "2026-09-21T04:07:55.448Z"
+  }
+}

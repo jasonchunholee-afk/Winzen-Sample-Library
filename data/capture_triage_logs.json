@@ -1,0 +1,33 @@
+[
+  {
+    "filename": "20S-1004-2 (F).jpg",
+    "garmentId": "20S-1004-2",
+    "setClassification": "Set A",
+    "status": "active",
+    "rejectionReason": null,
+    "confidence": 80,
+    "isGarmentOrCard": true,
+    "details": "Fallback default: classified Set A."
+  },
+  {
+    "filename": "empty_table_accidental_click.jpg",
+    "garmentId": "TEMP-EMPTY-1",
+    "setClassification": "Set A",
+    "status": "active",
+    "rejectionReason": null,
+    "confidence": 95,
+    "isGarmentOrCard": false,
+    "details": "Manually released from quarantine by QA Operator."
+  },
+  {
+    "filename": "WZ-7M42_MACRO_1_20260921_120000.jpg",
+    "garmentId": "WZ-7M42",
+    "setClassification": "Set B",
+    "status": "quarantined",
+    "rejectionReason": "REJECTED_NO_GARMENT",
+    "confidence": 100,
+    "isGarmentOrCard": false,
+    "details": "Solid green screen image with no apparel, garment, or care card visible.",
+    "hasCareCardOrLabel": false
+  }
+]

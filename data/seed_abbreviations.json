@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "term": "S.Cafe",
+    "category": "fiber/material",
+    "expansion_en": "S.Café Coffee Yarn",
+    "expansion_zh": "環保咖啡紗",
+    "functional_notes": "Patented eco-friendly yarn made from recycled coffee grounds; provides natural odour control, UV protection, and fast drying.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 2,
+    "term": "PU",
+    "category": "fiber/material",
+    "expansion_en": "Polyurethane",
+    "expansion_zh": "聚氨酯 / 彈力纖維",
+    "functional_notes": "Synthetic elastomeric polymer providing mechanical stretch, flexibility, and recovery.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 3,
+    "term": "BGM",
+    "category": "buyer/brand",
+    "expansion_en": "Boss Green Men",
+    "expansion_zh": "Hugo Boss 綠標男裝 (運動休閒系列)",
+    "functional_notes": "Hugo Boss athletic golf/sportswear menswear sub-brand.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 4,
+    "term": "BBM",
+    "category": "buyer/brand",
+    "expansion_en": "Boss Black Men",
+    "expansion_zh": "Hugo Boss 黑標男裝 (經典正裝系列)",
+    "functional_notes": "Hugo Boss core formal and tailored business menswear sub-brand.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 5,
+    "term": "BOM",
+    "category": "buyer/brand",
+    "expansion_en": "Boss Orange Men",
+    "expansion_zh": "Hugo Boss 橙標男裝 (休閒丹寧系列)",
+    "functional_notes": "Hugo Boss denim, vintage, and casual streetwear menswear sub-brand.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 6,
+    "term": "BGW",
+    "category": "buyer/brand",
+    "expansion_en": "Boss Green Women",
+    "expansion_zh": "Hugo Boss 綠標女裝",
+    "functional_notes": "Athletic sportswear womenswear sub-brand.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 7,
+    "term": "BBW",
+    "category": "buyer/brand",
+    "expansion_en": "Boss Black Women",
+    "expansion_zh": "Hugo Boss 黑標女裝",
+    "functional_notes": "Formal tailored womenswear sub-brand.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 8,
+    "term": "BOW",
+    "category": "buyer/brand",
+    "expansion_en": "Boss Orange Women",
+    "expansion_zh": "Hugo Boss 橙標女裝",
+    "functional_notes": "Casual denim womenswear sub-brand.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 9,
+    "term": "S/SLV",
+    "category": "garment/style",
+    "expansion_en": "Short Sleeves",
+    "expansion_zh": "短袖",
+    "functional_notes": "Garment designed with short sleeves ending above or at elbow.",
+    "source": "Winzen Standard Specification",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 10,
+    "term": "L/SLV",
+    "category": "garment/style",
+    "expansion_en": "Long Sleeves",
+    "expansion_zh": "長袖",
+    "functional_notes": "Garment designed with long sleeves extending to wrist.",
+    "source": "Winzen Standard Specification",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 11,
+    "term": "F-xxx",
+    "category": "factory/code",
+    "expansion_en": "Internal Winzen Fabric Code",
+    "expansion_zh": "內部布料編號",
+    "functional_notes": "Internal factory tracking reference (e.g. F-670, F-760). Must NOT be included in buyer fabric fields.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 12,
+    "term": "gm/m2",
+    "category": "unit",
+    "expansion_en": "Grams per Square Meter (GSM)",
+    "expansion_zh": "克重 (克/平方米)",
+    "functional_notes": "Standard international fabric weight metric. Replaces legacy LBS/DOZ.",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  },
+  {
+    "id": 13,
+    "term": "HB",
+    "category": "buyer/brand",
+    "expansion_en": "Hugo Boss",
+    "expansion_zh": "雨果博斯",
+    "functional_notes": "Parent luxury fashion group. Sub-brands include Boss (mature) and Hugo (younger, trendy).",
+    "source": "Jennifer Review Round 1 (15-2736)",
+    "created_at": "2026-09-15T00:02:35.024Z",
+    "updated_at": "2026-09-15T00:02:35.024Z"
+  }
+]

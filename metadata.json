@@ -1,0 +1,8 @@
+{
+  "name": "Remix Winzen Sample Library 3",
+  "description": "Offline-first garment digitization and AI description tool for Winzen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

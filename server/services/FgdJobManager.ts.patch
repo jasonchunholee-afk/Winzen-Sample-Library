@@ -1,0 +1,123 @@
+--- server/services/FgdJobManager.ts
++++ server/services/FgdJobManager.ts
+@@ -1,7 +1,7 @@
+-import fs from 'fs';
+-import path from 'path';
+ import { FgdEngine, GarmentTestReport } from './FgdEngine.ts';
+-
+-const DATA_DIR = path.join(process.cwd(), 'data');
+-const REPORTS_FILE = path.join(DATA_DIR, 'fgd_test_reports.json');
++import { db } from '../../src/db/index.ts';
++import { fgd_reports } from '../../src/db/schema.ts';
++import { eq, desc } from 'drizzle-orm';
+
+ export interface FgdJobLog {
+@@ -40,32 +40,32 @@
+   }
+ 
+-  private loadSavedReportsFromDisk(): void {
+-    try {
+-      if (!fs.existsSync(DATA_DIR)) {
+-        fs.mkdirSync(DATA_DIR, { recursive: true });
+-      }
+-      if (fs.existsSync(REPORTS_FILE)) {
+-        const raw = fs.readFileSync(REPORTS_FILE, 'utf-8');
+-        const parsed = JSON.parse(raw);
+-        if (Array.isArray(parsed) && parsed.length > 0) {
+-          this.savedReports = parsed;
++  private async loadSavedReportsFromDisk(): Promise<void> {
++    try {
++      const rows = await db.select().from(fgd_reports).orderBy(desc(fgd_reports.created_at));
++      if (rows && rows.length > 0) {
++        const parsed = rows.map(r => {
++          try { return JSON.parse(r.report_data); } catch { return null; }
++        }).filter(r => r !== null);
++        
++        if (parsed.length > 0) {
++          this.savedReports = parsed as GarmentTestReport[];
+           
+           // Rehydrate a completed job state so the UI immediately shows the previous report
+           const defaultJob: FgdJobState = {
+@@ -101,34 +101,33 @@
+   }
+ 
+-  public saveReportsToDisk(reports: GarmentTestReport[]): void {
+-    try {
+-      if (!fs.existsSync(DATA_DIR)) {
+-        fs.mkdirSync(DATA_DIR, { recursive: true });
+-      }
+-      for (const r of reports) {
+-        const anyR = r as any;
+-        if (!anyR.id) {
+-          anyR.id = `rep_${r.garment_id}_${new Date(r.tested_at || Date.now()).getTime()}`;
+-        }
+-        if (!anyR.run_label) {
+-          const dt = new Date(r.tested_at || Date.now());
+-          anyR.run_label = `Run on ${r.garment_id} (${dt.toLocaleDateString()} ${dt.toLocaleTimeString()})`;
+-        }
+-        const existingIdx = this.savedReports.findIndex(s => (s as any).id === anyR.id);
+-        if (existingIdx >= 0) {
+-          this.savedReports[existingIdx] = r;
+-        } else {
+-          this.savedReports.unshift(r);
+-        }
+-      }
+-      fs.writeFileSync(REPORTS_FILE, JSON.stringify(this.savedReports, null, 2), 'utf-8');
+-    } catch (err) {
+-      console.error('[FgdJobManager] Failed to persist reports to disk:', err);
+-    }
+-  }
+-
+-  public getSavedReports(forceReload: boolean = false): GarmentTestReport[] {
+-    if (forceReload || this.savedReports.length === 0) {
+-      this.loadSavedReportsFromDisk();
+-    }
+-    return this.savedReports;
+-  }
++  public async saveReportsToDisk(reports: GarmentTestReport[]): Promise<void> {
++    try {
++      const newReports = [];
++      for (const r of reports) {
++        const anyR = r as any;
++        if (!anyR.id) {
++          anyR.id = `rep_${r.garment_id}_${new Date(r.tested_at || Date.now()).getTime()}`;
++        }
++        if (!anyR.run_label) {
++          const dt = new Date(r.tested_at || Date.now());
++          anyR.run_label = `Run on ${r.garment_id} (${dt.toLocaleDateString()} ${dt.toLocaleTimeString()})`;
++        }
++        const existingIdx = this.savedReports.findIndex(s => (s as any).id === anyR.id);
++        if (existingIdx >= 0) {
++          this.savedReports[existingIdx] = r;
++        } else {
++          this.savedReports.unshift(r);
++        }
++        
++        newReports.push({
++          id: anyR.id,
++          status: 'completed',
++          report_data: JSON.stringify(r),
++          created_at: new Date()
++        });
++      }
++      
++      if (newReports.length > 0) {
++        await db.insert(fgd_reports).values(newReports).onConflictDoUpdate({
++          target: fgd_reports.id,
++          set: {
++            report_data: (sql) => sql`excluded.report_data`,
++            status: (sql) => sql`excluded.status`
++          }
++        });
++      }
++    } catch (err) {
++      console.error('[FgdJobManager] Failed to persist reports to postgres:', err);
++    }
++  }
++
++  public async getSavedReports(forceReload: boolean = false): Promise<GarmentTestReport[]> {
++    if (forceReload || this.savedReports.length === 0) {
++      await this.loadSavedReportsFromDisk();
++    }
++    return this.savedReports;
++  }

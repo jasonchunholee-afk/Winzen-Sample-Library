@@ -1,0 +1,216 @@
+[
+  {
+    "id": "rep_11S-1906_run1",
+    "run_label": "Evaluation Run 1 (Hugo Boss V-Neck)",
+    "garment_id": "11S-1906",
+    "tested_at": "2026-09-15T07:35:48.000Z",
+    "images_processed": [
+      "11S-1906.jpg (Label)",
+      "11S-1906 (F).jpg (Front)",
+      "11S-1906 (B).jpg (Back)"
+    ],
+    "original_fgd": {
+      "label": {
+        "buyer": "HB (Hugo Boss)",
+        "garment_type": "T-Shirt",
+        "washing": "GARMENT DYE",
+        "fabric_raw": "32/1 100% COTTON SINGLE JERSEY 32/1 棉平紋布",
+        "fabric_material": "100% COTTON",
+        "fabric_yarn_count": "32/1",
+        "fabric_construction": "SINGLE JERSEY",
+        "y_style_no": "MA7650/S-021",
+        "cust_style_no": "TBA",
+        "color": "Blue Tie-Dye",
+        "size": "L",
+        "gnw_weight": "185gm/m2",
+        "sales": "JENNIFER WONG",
+        "sample_job_no": "11S-1906"
+      },
+      "garment_description": "MEN'S KNITTED S/SLV SHIRT 男裝短袖衫",
+      "hashtags": [
+        "#reactive_tie_dye",
+        "#v_neck",
+        "#s_slv",
+        "#single_jersey",
+        "#cotton"
+      ]
+    },
+    "loops": [
+      {
+        "loop_number": 1,
+        "fresh_fgd": {
+          "label": {
+            "buyer": "Hugo Boss",
+            "garment_type": "V-Neck T-Shirt",
+            "washing": "Garment Dye",
+            "fabric_raw": "32/1 100% COTTON SINGLE JERSEY",
+            "fabric_material": "100% Cotton",
+            "fabric_yarn_count": "32/1",
+            "fabric_construction": "Single Jersey",
+            "y_style_no": "MA7650/S-021",
+            "cust_style_no": "TBA",
+            "color": "Blue Tie-Dye",
+            "size": "L",
+            "gnw_weight": "",
+            "sales": "JENNIFER WONG",
+            "sample_job_no": "11S-1906"
+          },
+          "garment_description": "Men's short-sleeve V-neck T-shirt featuring an artisanal blue and white tie-dye wash effect across knitted single jersey cotton.",
+          "hashtags": [
+            "#hugoboss",
+            "#menswear",
+            "#vnecktshirt",
+            "#tshirt",
+            "#singlejersey",
+            "#garmentdye",
+            "#tiedye",
+            "#pigment_tiedye",
+            "#casualwear",
+            "#blue",
+            "#summerfashion"
+          ]
+        },
+        "differences": [
+          {
+            "category": "Label",
+            "field": "buyer",
+            "original": "HB (Hugo Boss)",
+            "fresh": "Hugo Boss",
+            "analysis": "Value variation: \"HB (Hugo Boss)\" (Baseline) vs \"Hugo Boss\" (Fresh OCR)."
+          },
+          {
+            "category": "Label",
+            "field": "garment_type",
+            "original": "T-Shirt",
+            "fresh": "V-Neck T-Shirt",
+            "analysis": "Value variation: \"T-Shirt\" (Baseline) vs \"V-Neck T-Shirt\" (Fresh OCR)."
+          },
+          {
+            "category": "Label",
+            "field": "fabric_construction",
+            "original": "SINGLE JERSEY",
+            "fresh": "Single Jersey",
+            "analysis": "Value variation: \"SINGLE JERSEY\" (Baseline) vs \"Single Jersey\" (Fresh OCR)."
+          },
+          {
+            "category": "Label",
+            "field": "fabric_raw",
+            "original": "32/1 100% COTTON SINGLE JERSEY 32/1 棉平紋布",
+            "fresh": "32/1 100% COTTON SINGLE JERSEY",
+            "analysis": "Value variation: \"32/1 100% COTTON SINGLE JERSEY 32/1 棉平紋布\" (Baseline) vs \"32/1 100% COTTON SINGLE JERSEY\" (Fresh OCR)."
+          },
+          {
+            "category": "Label",
+            "field": "gnw_weight",
+            "original": "185gm/m2",
+            "fresh": "(empty)",
+            "analysis": "Baseline contained \"185gm/m2\", but fresh extraction missed it."
+          },
+          {
+            "category": "Garment Description",
+            "original": "MEN'S KNITTED S/SLV SHIRT 男裝短袖衫",
+            "fresh": "Men's short-sleeve V-neck T-shirt featuring an artisanal blue and white tie-dye wash effect across knitted single jersey cotton.",
+            "analysis": "Description text re-generated from fresh visual examination."
+          },
+          {
+            "category": "Hashtags",
+            "original": "#reactive_tie_dye, #v_neck, #s_slv, #single_jersey, #cotton",
+            "fresh": "#hugoboss, #menswear, #vnecktshirt, #tshirt, #singlejersey, #garmentdye, #tiedye, #pigment_tiedye, #casualwear, #blue, #summerfashion",
+            "analysis": "Missing from fresh: #reactive_tie_dye, #v_neck, #s_slv, #single_jersey | Newly suggested: #hugoboss, #menswear, #vnecktshirt, #tshirt, #singlejersey, #garmentdye, #tiedye, #pigment_tiedye, #casualwear, #blue, #summerfashion"
+          }
+        ],
+        "bulletpoints": [
+          "• **Label [buyer]**: Baseline \"HB (Hugo Boss)\" ↔ Fresh \"Hugo Boss\" (Value variation: \"HB (Hugo Boss)\" (Baseline) vs \"Hugo Boss\" (Fresh OCR).)",
+          "• **Label [garment_type]**: Baseline \"T-Shirt\" ↔ Fresh \"V-Neck T-Shirt\" (Value variation: \"T-Shirt\" (Baseline) vs \"V-Neck T-Shirt\" (Fresh OCR).)",
+          "• **Label [fabric_construction]**: Baseline \"SINGLE JERSEY\" ↔ Fresh \"Single Jersey\" (Value variation: \"SINGLE JERSEY\" (Baseline) vs \"Single Jersey\" (Fresh OCR).)",
+          "• **Label [fabric_raw]**: Baseline \"32/1 100% COTTON SINGLE JERSEY 32/1 棉平紋布\" ↔ Fresh \"32/1 100% COTTON SINGLE JERSEY\" (Value variation: \"32/1 100% COTTON SINGLE JERSEY 32/1 棉平紋布\" (Baseline) vs \"32/1 100% COTTON SINGLE JERSEY\" (Fresh OCR).)",
+          "• **Label [gnw_weight]**: Baseline \"185gm/m2\" ↔ Fresh \"(empty)\" (Baseline contained \"185gm/m2\", but fresh extraction missed it.)",
+          "• **Garment Description**: Description text re-generated from fresh visual examination.",
+          "• **Hashtags Missing vs Original**: #reactive_tie_dye, #v_neck, #s_slv, #single_jersey",
+          "• **Hashtags Newly Suggested**: #hugoboss, #menswear, #vnecktshirt, #tshirt, #singlejersey, #garmentdye, #tiedye, #pigment_tiedye, #casualwear, #blue, #summerfashion"
+        ],
+        "amended_rules": [
+          {
+            "rule_code": "RULE-CALIB-01",
+            "rule_type": "positive",
+            "target_field": "buyer",
+            "rule_title": "Hugo Boss Permanent Brand Architecture (HUGO vs BOSS)",
+            "condition_trigger": "Label identifies Hugo Boss / HB, or displays 'HUGO' or 'BOSS' typography.",
+            "rule_instruction": "Classify into the permanent brand architecture: 'HUGO' (Gen Z / progressive streetwear / red logo / standalone retail stores) or 'BOSS' (contemporary luxury / tailoring / camel-black-white branding, including sub-lines BOSS Black, BOSS Orange, BOSS Green). This corporate restructuring is permanent, not a temporal line.",
+            "example_positive": "BOSS (or HUGO)",
+            "example_negative": "HB (Hugo Boss) (omitting permanent brand pillar)",
+            "source_feedback": "FGD Calibration Loop 1 for 11S-1906",
+            "user_comment": "Hugo Boss restructured into two distinct brand pillars: 'HUGO' and 'BOSS'. They have separate retail stores, differing design languages, and distinct target demographics. This is a permanent brand architecture, not a temporal line."
+          },
+          {
+            "rule_code": "RULE-CALIB-02",
+            "rule_type": "positive",
+            "target_field": "gnw_weight",
+            "rule_title": "Persistent Retention of Fabric Weight",
+            "condition_trigger": "Fabric weight specification is present in sample card or internal fabric documentation.",
+            "rule_instruction": "Ensure extracted fabric weight in gm/m2 is strictly preserved in the GNW weight field even when visual inspection of main garment label lacks explicit density stamps.",
+            "example_positive": "185gm/m2",
+            "example_negative": "(empty)",
+            "source_feedback": "FGD Calibration Loop 1 for 11S-1906"
+          },
+          {
+            "rule_code": "RULE-CALIB-03",
+            "rule_type": "positive",
+            "target_field": "garment_type",
+            "rule_title": "Mandatory Precision in Neckline Identification",
+            "condition_trigger": "Garment collar visual features a distinct V-shape opening.",
+            "rule_instruction": "Classify silhouette with explicit neckline attribute as 'V-Neck T-Shirt' or ensure '#v_neck' tag is retained to enable precise technical searching.",
+            "example_positive": "V-Neck T-Shirt (#v_neck)",
+            "example_negative": "Generic T-Shirt omitting neckline structure",
+            "source_feedback": "FGD Calibration Loop 1 for 11S-1906"
+          }
+        ],
+        "score": 7.6,
+        "score_breakdown": {
+          "label_accuracy": 3.1,
+          "description_fidelity": 3.3,
+          "hashtag_coverage": 1.2
+        },
+        "evaluation_summary": "Initial fresh extraction identified key silhouette and single jersey knit, with discrepancies in weight retention, buyer format, and neckline precision."
+      }
+    ],
+    "final_score": 7.6,
+    "final_verdict": "Requires Further Rule Calibration",
+    "cumulative_rule_amendments": [
+      {
+        "rule_code": "RULE-CALIB-01",
+        "rule_type": "positive",
+        "target_field": "buyer",
+        "rule_title": "Hugo Boss Permanent Brand Architecture (HUGO vs BOSS)",
+        "condition_trigger": "Label identifies Hugo Boss / HB, or displays 'HUGO' or 'BOSS' typography.",
+        "rule_instruction": "Classify into the permanent brand architecture: 'HUGO' (Gen Z / progressive streetwear / red logo / standalone retail stores) or 'BOSS' (contemporary luxury / tailoring / camel-black-white branding, including sub-lines BOSS Black, BOSS Orange, BOSS Green). This corporate restructuring is permanent, not a temporal line.",
+        "example_positive": "BOSS (or HUGO)",
+        "example_negative": "HB (Hugo Boss) (omitting permanent brand pillar)",
+        "source_feedback": "FGD Calibration Loop 1 for 11S-1906",
+        "user_comment": "Hugo Boss restructured into two distinct brand pillars: 'HUGO' and 'BOSS'. They have separate retail stores, differing design languages, and distinct target demographics. This is a permanent brand architecture, not a temporal line."
+      },
+      {
+        "rule_code": "RULE-CALIB-02",
+        "rule_type": "positive",
+        "target_field": "gnw_weight",
+        "rule_title": "Persistent Retention of Fabric Weight",
+        "condition_trigger": "Fabric weight specification is present in sample card or internal fabric documentation.",
+        "rule_instruction": "Ensure extracted fabric weight in gm/m2 is strictly preserved in the GNW weight field even when visual inspection of main garment label lacks explicit density stamps.",
+        "example_positive": "185gm/m2",
+        "example_negative": "(empty)",
+        "source_feedback": "FGD Calibration Loop 1 for 11S-1906"
+      },
+      {
+        "rule_code": "RULE-CALIB-03",
+        "rule_type": "positive",
+        "target_field": "garment_type",
+        "rule_title": "Mandatory Precision in Neckline Identification",
+        "condition_trigger": "Garment collar visual features a distinct V-shape opening.",
+        "rule_instruction": "Classify silhouette with explicit neckline attribute as 'V-Neck T-Shirt' or ensure '#v_neck' tag is retained to enable precise technical searching.",
+        "example_positive": "V-Neck T-Shirt (#v_neck)",
+        "example_negative": "Generic T-Shirt omitting neckline structure",
+        "source_feedback": "FGD Calibration Loop 1 for 11S-1906"
+      }
+    ]
+  }
+]
